@@ -25,7 +25,7 @@ module "EKS-cluster" {
   cluster_name                    = "${var.cluster_name}"
   eks_master_role_arn             = "${module.IAM-Role.eks_master_role_arn}"
   eks_master_securitygroup_id     = "${module.SecurityGroup.eks_master_securitygroup_id}"
-  subnet_ids                      = "${var.public_subnet_ids}"
+  subnet_ids                      = "${var.private_subnet_ids}"
   project                         = "${var.project}"
 }
 
