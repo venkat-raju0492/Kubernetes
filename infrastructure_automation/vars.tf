@@ -10,10 +10,6 @@ variable "cidr_blocks" {
   description = "cidr block for VPC"
 }
 
-variable "public_subnet_ids" {
-  type = "list"
-  description = "subnet ids for eks"
-}
 
 variable "private_subnet_ids" {
   type = "list"
