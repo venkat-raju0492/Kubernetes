@@ -1,4 +1,4 @@
-vpc_id = "vpc-1b18d262"
+vpc_id = "vpc-1a173d72"
 cidr_blocks = "172.31.0.0/16"
 private_subnet_ids = ["subnet-a84516c0","subnet-e733b2ab"]
 public_subnet_ids = ["subnet-1affd552","subnet-0de76547f4d23525f"]
