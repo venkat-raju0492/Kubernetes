@@ -1,18 +1,5 @@
-terraform {
-  backend "s3" {}
-}
-
 provider "aws" {
   region                          = "${var.region}"
-}
-
-data "terraform_remote_state" "levis_infra_state" {
-  backend = "s3"
-  config {
-    bucket = "terraform-states-${var.region}"
-    key = "eks.tfstate"
-    region = "${var.region}"
-  }
 }
 
 
